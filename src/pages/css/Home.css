@@ -1,0 +1,54 @@
+body {
+ background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Palatino Linotype', serif;
+}
+
+.home-cards{
+    border-radius: 30px !important;
+}
+
+.card-love {
+  background: #fbe6e9; /* soft baby pink background */
+  border-radius: 20px;
+  border: none;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card-love:hover {
+  transform: scale(1.05);
+  /* background-color: #ffe6ec;  */
+}
+
+/* Style for the GIFs used as icons */
+.card-love img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+/* Optional: If you want to animate the GIF slightly on hover */
+.card-love:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.username {
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .card-love {
+    padding: 1rem 0.5rem;
+  }
+}

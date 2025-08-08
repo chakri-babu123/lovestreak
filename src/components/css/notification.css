@@ -1,0 +1,64 @@
+.notification-page {
+ 
+ border-radius: 20px;
+}
+
+.notify-mini {
+  background-color: #fff;
+  height: 500px;
+  padding-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.scrollable-content {
+  max-height: 400px; /* controls how many notifications are visible */
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 6px;
+}
+
+.notification-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.follow-requests {
+  color: gray;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+.dot {
+  color: red;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.section-label {
+  font-weight: 500;
+  color: #666;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.notification-item {
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.notify-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}

@@ -1,0 +1,163 @@
+.profile-container {
+  max-width: 340px;
+  margin: auto;
+  padding: 20px 16px;
+  background: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #eee;
+}
+
+.profile-name {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verified-badge {
+  font-size: 16px;
+  color: #0095f6;
+  margin-left: 5px;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box strong {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+
+.stat-box span {
+  font-size: 13px;
+  color: #888;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.follow-btn {
+  flex: 1;
+  background: linear-gradient(to right, #ff4d88, #ff9966);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.message-btn {
+  flex: 1;
+  background: transparent;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 30px;
+  padding: 8px 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-scroll {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 6px;
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile-header {
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.settings-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #666;
+  transition: 0.3s;
+}
+
+.settings-icon:hover {
+  color: #000;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.verified-badge {
+  color: #007bff;
+  font-size: 18px;
+}
+

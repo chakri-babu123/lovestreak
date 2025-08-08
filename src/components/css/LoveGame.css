@@ -1,0 +1,273 @@
+.love-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+.fireworks-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  /* Full width */
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.game-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff4f88;
+  text-shadow: 1px 1px 2px #ff99bb;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 15px;
+  margin-bottom: 20px;
+  perspective: 1000px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 0, 128, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.square:hover {
+  transform: rotateY(10deg) rotateX(5deg);
+  background: #ffe6f0;
+}
+
+.heart-icon {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.x-icon {
+  color: #5555ff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.result-box {
+  background: #fff0f6;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+  text-align: center;
+  margin-top: 1rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.reward {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #ff1493;
+}
+
+.rematch-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(255, 0, 102, 0.3);
+  transition: background 0.3s ease;
+}
+
+.rematch-btn:hover {
+  background-color: #ff3385;
+}
+
+.love-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.game-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff4f88;
+  text-shadow: 1px 1px 2px #ff99bb;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 15px;
+  margin-bottom: 20px;
+  perspective: 1000px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 0, 128, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.square:hover {
+  transform: rotateY(10deg) rotateX(5deg);
+  background: #ffe6f0;
+}
+
+.heart-icon {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.x-icon {
+  color: #5555ff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.result-box {
+  background: #fff0f6;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+  text-align: center;
+  margin-top: 1rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.reward {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #ff1493;
+}
+
+.rematch-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(255, 0, 102, 0.3);
+  transition: background 0.3s ease;
+}
+
+.rematch-btn:hover {
+  background-color: #ff3385;
+}
+/* Common strike base */
+.strike {
+  position: absolute;
+  background-color: red;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* Horizontal strikes (rows) */
+.strike-row-1,
+.strike-row-2,
+.strike-row-3 {
+  height: 4px;
+  width: 100%;
+  left: 0;
+  animation: strikeWidth 0.4s ease-out;
+}
+
+.strike-row-1 { top: 16.66%; }
+.strike-row-2 { top: 50%; transform: translateY(-50%); }
+.strike-row-3 { top: 83.33%; }
+
+/* Vertical strikes (columns) */
+.strike-col-1,
+.strike-col-2,
+.strike-col-3 {
+  width: 4px;
+  height: 100%;
+  top: 0;
+  animation: strikeHeight 0.4s ease-out;
+}
+
+.strike-col-1 { left: 16.66%; }
+.strike-col-2 { left: 50%; transform: translateX(-50%); }
+.strike-col-3 { left: 83.33%; }
+
+/* Diagonal strikes */
+.strike-diag-1,
+.strike-diag-2 {
+  width: 140%;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  animation: strikeWidth 0.4s ease-out;
+}
+
+.strike-diag-1 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.strike-diag-2 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Animations */
+@keyframes strikeWidth {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes strikeHeight {
+  from { height: 0; }
+  to { height: 100%; }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

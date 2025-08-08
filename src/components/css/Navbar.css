@@ -1,0 +1,84 @@
+/* Navbar layout for all screens */
+.bottom-navbar {
+  width: 90%;
+  max-width: 400px;
+  background-color: #F4E0E1; /* Baby pink */
+  border-radius: 40px;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  position: fixed;
+}
+
+/* Mobile: bottom navbar */
+@media (max-width: 767px) {
+  .bottom-navbar {
+    bottom: 0px;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+      width: 100%;
+      border-radius: 0px;
+  }
+}
+
+/* Desktop and iPad: top navbar */
+@media (min-width: 768px) {
+  .bottom-navbar {
+    top: 0;
+    left: 50%;
+    bottom: auto;
+    transform: translateX(-50%);
+    margin-top: 10px;
+  
+  }
+}
+
+/* Icon and text styles */
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  color: #5b4a4a;
+  transition: all 0.3s ease;
+}
+
+.nav-icon svg {
+  margin-bottom: 4px;
+}
+
+.nav-icon.active {
+  color: #c0392b;
+}
+
+.nav-icon.active svg {
+  transform: scale(1.1);
+}
+
+.nav-icon span {
+  font-family: 'Palatino Linotype', serif;
+  margin-top: 2px;
+}
+
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 2;
+}

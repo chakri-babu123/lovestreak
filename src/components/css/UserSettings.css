@@ -1,0 +1,117 @@
+.settings-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  background-color: #f4f8fd;
+  border-radius: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.user-profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.user-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #2e8fff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  transform: translate(25%, 25%);
+}
+
+.user-name {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.user-email {
+  background-color: #dfefff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 14px;
+  color: #007bff;
+  margin-top: 6px;
+}
+
+.settings-list {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 12px 0;
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.settings-item:last-child {
+  border-bottom: none;
+}
+
+.settings-item .icon {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.settings-item .label {
+  flex-grow: 1;
+}
+
+.settings-item .count {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.settings-item .arrow {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.settings-item.logout {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.back-button {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #444;
+}
+
+.back-button:hover {
+  color: #000;
+}

@@ -1,0 +1,161 @@
+.contest-container {
+
+  min-height: 100vh;
+  padding: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.upload-card {
+  background-color: #ffe9e9;
+  border-radius: 28px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-title-box {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.upload-label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: left;
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.white-box{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.countdown-section {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.countdown-timer {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4f91;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #ff4f91;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #ff2f7a;
+}
+
+.past-winners-section {
+  margin-top: 2rem;
+}
+
+.past-winners-section h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.winner-slide {
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.winner-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.winner-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.winner-name {
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.vote-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e25587;
+  font-size: 0.8rem;
+  gap: 4px;
+}
+
+.heart-icon-pink {
+  color: #ff4da6;
+}
+.countdown-timer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.timer-box {
+  width: 65px;
+  height: 60px; /* Fixed height */
+  background-color: #fff0f6;
+  border: 1px solid #ff4f91;
+  border-radius: 12px;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(255, 79, 145, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.timer-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ff4f91;
+  display: block;
+}
+
+.timer-label {
+  font-size: 0.75rem;
+  color: #444;
+  margin-top: 0.2rem;
+  display: block;
+}

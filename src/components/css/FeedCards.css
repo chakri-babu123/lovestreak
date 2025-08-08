@@ -1,0 +1,174 @@
+
+.feed-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.feedcard {
+  width: 300px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px 15px 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add the colored gradient curve */
+.feedcard::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 434px;
+  height: 300px;
+  background: radial-gradient(circle at top left, #f54ea2, #ff7676);
+  border-bottom-right-radius: 100%;
+  z-index: 0;
+}
+
+.feedcard * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.feedcard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-icon {
+  font-size: 18px;
+  color: white;
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+}
+
+.dots span {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+
+.profile-pic-wrapper {
+  position: relative;
+  margin-top: 10px;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 6px solid white;
+  object-fit: cover;
+}
+
+.action-buttons {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.profile-info {
+  margin-top: 35px;
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.date-button {
+  margin-top: 15px;
+  background: linear-gradient(to right, #f54ea2, #ff7676);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.date-button:hover {
+  opacity: 0.9;
+}
+
+ .feed-row {
+  display: grid;
+  grid-template-columns: repeat( 1fr); /* Mobile default: 2 cards per row */
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+
+@media (min-width: 768px) {
+  .feed-row {
+    grid-template-columns: repeat(3, 1fr); /* Tablet & Desktop: 3 cards per row */
+  }
+}
+
+@media (max-width: 767px) {
+
+
+
+.feedcard {
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+}
