@@ -17,7 +17,7 @@ const Home = () => {
           <Col xs={6} sm={6} md={4} lg={3}>
            <Link to="/lovenote" className="text-decoration-none">
             <Card className="card-love text-center p-3 home-cards">
-              <img src="/assets/notes.gif" alt="Love Note" className="love-gif mb-2" />
+              <img src="./assets/notes.gif" alt="Love Note" className="love-gif mb-2" />
               <Card.Title>Love Note</Card.Title>
             </Card>
           </Link>
@@ -25,7 +25,7 @@ const Home = () => {
           <Col xs={6} sm={6} md={4} lg={3}>
             <Link to="/contest" className="text-decoration-none">
             <Card className="card-love text-center p-3 home-cards">
-              <img src="/assets/win.gif" alt="Contest" className="love-gif mb-2" />
+              <img src="./assets/win.gif" alt="Contest" className="love-gif mb-2" />
               <Card.Title>Contest</Card.Title>
             </Card>
           </Link>
@@ -36,7 +36,7 @@ const Home = () => {
           <Col xs={6} sm={6} md={4} lg={3}>
            <Link to="/lovegame" className="text-decoration-none">
             <Card className="card-love text-center p-3 home-cards">
-              <img src="/assets/kissing.gif" alt="Love Game" className="love-gif mb-2" />
+              <img src="./assets/kissing.gif" alt="Love Game" className="love-gif mb-2" />
               <Card.Title>Love Game</Card.Title>
             </Card>
           </Link>
@@ -44,7 +44,7 @@ const Home = () => {
           <Col xs={6} sm={6} md={4} lg={3}>
             <Link to="/singlescard" className="text-decoration-none">
               <Card className="card-love text-center p-3 home-cards">
-                <img src="/assets/singles.gif" alt="Singles" className="love-gif mb-2" />
+                <img src="./assets/singles.gif" alt="Singles" className="love-gif mb-2" />
                 <Card.Title>Singles</Card.Title>
               </Card>
             </Link>
